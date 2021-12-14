@@ -1,9 +1,3 @@
-GET http://localhost:3001/users?page=2&limit=5
-
 
 ###
-POST http://localhost:3001//v1/notify Content-Type: application/json
-{
-"city": "City 5"
-}
-
+POST http://localhost:3001/v1/notify

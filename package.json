@@ -1,14 +1,17 @@
 {
-  "name": "pagination-middleware",
+  "name": "voila-notification-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "voila notification backend service",
   "main": "app.js",
   "scripts": {
-    "runDev": "nodemon app.js"
+    "runApp": "node app.js",
+    "runDev": "nodemon app.js",
+    "docker:run": "docker-compose -f docker-compose.yml up"
   },
-  "author": "",
+  "author": "Mohamed Ali",
   "license": "ISC",
   "dependencies": {
+    "bull": "^4.1.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "faker": "^5.5.3",

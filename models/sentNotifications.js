@@ -11,9 +11,13 @@ const sentNotificationSchema = new mongoose.Schema({
         ref: 'Notification',
         required: true,
     },
-    sentDate: {
+    preference: {
+        type: Number,
+        required: true,
+    },
+    sentAt: {
         type: Date,
-        defaults: Date.now
+        default: Date.now
     }
 });
 

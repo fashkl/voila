@@ -9,15 +9,15 @@ const userSchema = new mongoose.Schema({
     city: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
-        index: true,
+        ref:'City',
     },
     preference: {
         type: Number,
         required: true,
     },
-    creationDate: {
+    createdAt: {
         type: Date,
-        defaults: Date.now
+        default: Date.now
     },
 });
 
